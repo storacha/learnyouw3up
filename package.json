@@ -1,0 +1,32 @@
+{
+  "name": "learnyouw3up",
+  "version": "0.0.0",
+  "description": "Workshopper for learning how to use w3up - a UCAN based upload service for IPFS and Filecoin.",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "learnyouw3up": "bin.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "w3up",
+    "web3.storage",
+    "web3",
+    "UCAN",
+    "IPFS",
+    "Filecoin",
+    "learn",
+    "workshop",
+    "workshopper"
+  ],
+  "author": "Alan Shaw",
+  "license": "Apache-2.0 OR MIT",
+  "dependencies": {
+    "adventure": "^2.11.1"
+  },
+  "devDependencies": {
+    "standard": "^17.1.0"
+  }
+}
