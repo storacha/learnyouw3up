@@ -2,7 +2,7 @@
 
 Learn you the w3up for much win! Workshopper for learning how to use w3up - a UCAN based upload service for IPFS and Filecoin.
 
-![preview](https://w3s.link/ipfs/bafybeihlswt3jhxdjb6wd7stozrpx6z23vn6pinxjm3ehk5evhwc5jswra)
+![preview](https://bafybeihlswt3jhxdjb6wd7stozrpx6z23vn6pinxjm3ehk5evhwc5jswra.ipfs.w3s.link/learnyouw3up.png)
 
 ## Install
 
