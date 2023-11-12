@@ -24,7 +24,8 @@
   "author": "Alan Shaw",
   "license": "Apache-2.0 OR MIT",
   "dependencies": {
-    "adventure": "^2.11.1"
+    "adventure": "^2.11.1",
+    "msee": "^0.3.5"
   },
   "devDependencies": {
     "standard": "^17.1.0"

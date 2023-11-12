@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 import adventure from 'adventure'
-import * as TestProblem from './problems/test.js'
+import * as IntroductionProblem from './problems/introduction/index.js'
+import * as SpaceOutProblem from './problems/space-out/index.js'
+import * as PlaceholderProblem from './problems/placeholder.js'
 
 const shop = adventure({
   name: 'learnyouw3up',
@@ -8,13 +10,14 @@ const shop = adventure({
   bg: 'magenta'
 })
 
-shop.add('Introduction: UCAN do it!', () => TestProblem)
-shop.add('Storing cat gifs for fun and gossip', () => TestProblem)
-shop.add('Delegation, invocation and procrastination', () => TestProblem)
-shop.add('Infinite avatar compression!', () => TestProblem)
-shop.add('Memes for my eyes', () => TestProblem)
-shop.add('DUDE, WHERE\'S MY CAR?', () => TestProblem)
-shop.add('CommP at the edge or die trying', () => TestProblem)
-shop.add('Revocation station', () => TestProblem)
+shop.add('Introduction: UCAN do it!', () => IntroductionProblem)
+shop.add('Lets space out', () => SpaceOutProblem)
+shop.add('Storing cat gifs for fun and gossip', () => PlaceholderProblem)
+shop.add('Delegation, invocation and procrastination', () => PlaceholderProblem)
+shop.add('Infinite avatar compression!', () => PlaceholderProblem)
+shop.add('Memes for my eyes', () => PlaceholderProblem)
+shop.add('DUDE, WHERE\'S MY CAR?', () => PlaceholderProblem)
+shop.add('CommP at the edge or die trying', () => PlaceholderProblem)
+shop.add('Revocation station', () => PlaceholderProblem)
 
 shop.execute(process.argv.slice(2))
