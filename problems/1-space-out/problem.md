@@ -41,7 +41,7 @@ When you call login, the script will wait until you click on the link in the ema
 
 ```js
 // click the link in the email, but selecting a payment plan is optional, 
-// because the account funding your space is provided for you! \o/
+// because the coupon is funding your space! \o/
 const myAccount = await client.login('your@email')
 
 // fetch the account information
@@ -49,8 +49,8 @@ const res = await fetch('https://url-provided-to-you')
 const data = new Uint8Array(await res.arrayBuffer())
 
 // provision the space with the provided coupon
-const coupon = await client.extractCoupon(data)
-await coupon.provision(permission)
+const access = await client.coupon.redeem(data)
+await space.provision(access)
 ```
 
 Once provisioned, it's a really good idea to setup recovery, so that when you move to a different device you can still access your space:
