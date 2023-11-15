@@ -10,9 +10,13 @@ The best thing about UCANs is that you can provably delegate "capabilities" that
 
 In this exercise, you're going to delegate an `upload/list` capability to the workshop. Behind the scenes the workshop will create it's own private key, and pass it's public key (it's DID) to you on `stdin`.
 
-Your program should read from `process.stdin`, create a delegation for the `upload/list` capability and write it to `process.stdout`.
+Your program should read from `process.stdin`, create a delegation for the `upload/list` capability and write it to `process.stdout`. So, something like this:
 
-Then the workshop will be able to list the items you've uploaded to your space. It'll verify it can find that cat gif you uploaded in the previous exercise.
+```
+DID => your program => delegation
+```
+
+Then the workshop will be able to **invoke** the capability to list the items _you've_ uploaded to _your_ space. It'll verify it can find that cat gif you uploaded in the previous exercise.
 
 You can read and parse the DID from `stdin` like so:
 
