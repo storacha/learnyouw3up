@@ -41,5 +41,13 @@
     "files-from-path": "^1.0.1",
     "ipfs-unixfs-exporter": "^13.2.2",
     "standard": "^17.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/web3-storage/learnyouw3up.git"
+  },
+  "bugs": {
+    "url": "https://github.com/web3-storage/learnyouw3up/issues"
+  },
+  "homepage": "https://github.com/web3-storage/learnyouw3up#readme"
 }
