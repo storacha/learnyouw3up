@@ -3,6 +3,7 @@ import adventure from 'adventure'
 import * as IntroductionProblem from './problems/0-introduction/index.js'
 import * as SpaceOutProblem from './problems/1-space-out/index.js'
 import * as CatGifsProblem from './problems/2-cat-gifs/index.js'
+import * as DelegationProblem from './problems/3-delegation/index.js'
 import * as PlaceholderProblem from './problems/placeholder/index.js'
 
 const shop = adventure({
@@ -14,7 +15,7 @@ const shop = adventure({
 shop.add('Introduction: UCAN do it!', () => IntroductionProblem)
 shop.add('Lets space out', () => SpaceOutProblem)
 shop.add('Storing cat gifs for fun and gossip', () => CatGifsProblem)
-shop.add('Delegation, invocation and procrastination', () => PlaceholderProblem)
+shop.add('Delegation, invocation and procrastination', () => DelegationProblem)
 shop.add('Infinite avatar compression!', () => PlaceholderProblem)
 shop.add('Memes for my eyes', () => PlaceholderProblem)
 shop.add('DUDE, WHERE\'S MY CAR?', () => PlaceholderProblem)

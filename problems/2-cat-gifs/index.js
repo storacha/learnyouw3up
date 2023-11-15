@@ -30,14 +30,14 @@ export const verify = (args, cb) => {
     }
 
     const client = await Client.create()
-    const { results } = await client.capability.store.list()
-    const found = results.some(r => r.link.toString() === root.toString())
+    const { results } = await client.capability.upload.list()
+    const found = results.some(r => r.root.toString() === root.toString())
     if (!found) {
       cb(false)
       return console.log(
         results.length
-          ? `Found ${results.length} stored items but ${root} was not one of them.`
-          : `No items stored in space: ${client.currentSpace()}`
+          ? `Found ${results.length} uploads but ${root} was not one of them.`
+          : `No uploads in space: ${client.currentSpace()}`
       )
     }
 
