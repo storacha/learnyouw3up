@@ -4,6 +4,8 @@ Any meme you upload is almost instantly available for retrieval. Other files als
 
 You can use the `w3s.link` gateway to retrieve the data but the magic of decentralized peer to peer networking means that you should be able to use any gateway.
 
+Create a _new_ file for your solution e.g. `ex6.js`.
+
 To retrieve data from a gateway you should format the request like:
 
 ```
