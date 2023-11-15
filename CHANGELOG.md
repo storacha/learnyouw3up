@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.3.0](https://github.com/web3-storage/learnyouw3up/compare/v1.2.0...v1.3.0) (2023-11-15)
+
+
+### Features
+
+* add commp exercise ([b8c0027](https://github.com/web3-storage/learnyouw3up/commit/b8c002766a657fa8be6d65cdcf7d665d63b43469))
+
+
+### Bug Fixes
+
+* some validation for filecoin deal info ([c43c0a7](https://github.com/web3-storage/learnyouw3up/commit/c43c0a7b7f0bbb8b00791d3cdcb4a645c36d4ac4))
+
 ## [1.2.0](https://github.com/web3-storage/learnyouw3up/compare/v1.1.0...v1.2.0) (2023-11-15)
 
 
