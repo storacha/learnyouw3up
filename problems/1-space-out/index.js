@@ -38,6 +38,7 @@ export const verify = (args, cb) => {
       )
     }
 
+    await client.setCurrentSpace(spaceDID)
     cb(true)
   })()
 }

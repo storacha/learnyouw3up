@@ -10,7 +10,7 @@ In this exercise your challenge is to setup a space where you can upload data to
 
 Yes - each space has a DID as well!
 
-Anyway, lets get started. Create a _new_ file for your solution e.g. `ex2.js`. Import the library and create the client as before. Now, lets use `createSpace` to, you guessed it, create a new space:
+Anyway, lets get started. Create a _new_ file for your solution e.g. `ex2.js`. Import the w3up library and create the client as before. Now, lets use `createSpace` to, you guessed it, create a new space:
 
 ```js
 const space = await client.createSpace('my space')
