@@ -16,7 +16,7 @@ Your data makes it's way through the _aggregation_ pipeline. Asynchronous tasks 
 
 It can take a while for aggregation to happen and for deals to be negotiated so in this exercise we'll fetch Filecoin deal information for a pre-canned piece CID.
 
-Create a _new_ file for your solution e.g. `ex8.js` and use the `client.capability.filecoin.info()` method to query deal information. A piece CID you can use is `bafkzcibcaycsfehfpywo35zgvilhaqegcsrslebar6vcnwvzi64fljvwdrhvqei`.
+Create a _new_ file for your solution e.g. `ex8.mjs` and use the `client.capability.filecoin.info()` method to query deal information. A piece CID you can use is `bafkzcibcaycsfehfpywo35zgvilhaqegcsrslebar6vcnwvzi64fljvwdrhvqei`.
 
 Use `dag-json` to encode the output and write the bytes to `process.stdout`.
 
@@ -29,5 +29,5 @@ npm install @ipld/dag-json
 
 ─────────────────────────────────────────────────────────────────────────────
 * To print these instructions again, run: `$ADVENTURE_NAME print`
-* To verify your program, run: `$ADVENTURE_NAME verify program.js`
+* To verify your program, run: `$ADVENTURE_NAME verify program.mjs`
 * For help run: `$ADVENTURE_NAME help`

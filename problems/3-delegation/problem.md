@@ -28,11 +28,11 @@ const data = fs.readFileSync(process.stdin.fd, 'utf-8')
 const principal = DID.parse(data)
 ```
 
-Create a _new_ file for your solution e.g. `ex4.js` and use the client to create a delegation for `upload/list` to the provided DID. Create an archive of the delegation and write it to `process.stdout`.
+Create a _new_ file for your solution e.g. `ex4.mjs` and use the client to create a delegation for `upload/list` to the provided DID. Create an archive of the delegation and write it to `process.stdout`.
 
 One last thing, make sure the delegation remains valid for **more than one hour**.
 
 ─────────────────────────────────────────────────────────────────────────────
 * To print these instructions again, run: `$ADVENTURE_NAME print`
-* To verify your program, run: `$ADVENTURE_NAME verify program.js`
+* To verify your program, run: `$ADVENTURE_NAME verify program.mjs`
 * For help run: `$ADVENTURE_NAME help`

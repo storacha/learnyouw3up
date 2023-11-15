@@ -14,11 +14,11 @@ In web3.storage, we content address CARs as well! So we generate a hash for the 
 
 I know loads of text, but one more thing, sometimes y'all got big datas. If the datas are big, we split the DAG across multiple CAR files. In this exercise we're going to store something else and log out the CAR CIDs a.k.a. the CID of the CAR _shards_.
 
-Create a _new_ file for your solution e.g. `ex5.js` and upload something like you did in the cat gifs exercise. This time though, print out the CIDs of the CAR shards as they are sent, and then _finally_ the CID of the root of the DAG. Your output is expected to be newline delimited.
+Create a _new_ file for your solution e.g. `ex5.mjs` and upload something like you did in the cat gifs exercise. This time though, print out the CIDs of the CAR shards as they are sent, and then _finally_ the CID of the root of the DAG. Your output is expected to be newline delimited.
 
 Good luck!
 
 ─────────────────────────────────────────────────────────────────────────────
 * To print these instructions again, run: `$ADVENTURE_NAME print`
-* To verify your program, run: `$ADVENTURE_NAME verify program.js`
+* To verify your program, run: `$ADVENTURE_NAME verify program.mjs`
 * For help run: `$ADVENTURE_NAME help`

@@ -16,9 +16,9 @@ npm install @web3-storage/w3up-client
 ```
 
 Nice one. Now, this is how things are going to work. You make a JS file for
-each exercise in the directory you installed the library e.g. `ex1.js`.
+each exercise in the directory you installed the library e.g. `ex1.mjs`.
 You write the code that solves the problem, and then the workshopper will
-verify your solution when you type: `learnyounode verify ex1.js`.
+verify your solution when you type: `learnyounode verify ex1.mjs`.
 
 When you succeed, you type learnyouw3up again and select the next exercise.
 
@@ -35,12 +35,12 @@ const client = await Client.create()
 console.log(client.did())
 ```
 
-When you're done, verify your solution with `learnyouw3up verify ex1.js`
+When you're done, verify your solution with `learnyouw3up verify ex1.mjs`
 and then type `learnyouw3up` and select the next exercise.
 
 Go now, I believe in you.
 
 ─────────────────────────────────────────────────────────────────────────────
 * To print these instructions again, run: `$ADVENTURE_NAME print`
-* To verify your program, run: `$ADVENTURE_NAME verify program.js`
+* To verify your program, run: `$ADVENTURE_NAME verify program.mjs`
 * For help run: `$ADVENTURE_NAME help`

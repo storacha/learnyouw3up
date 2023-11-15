@@ -10,7 +10,7 @@ In the third web, you hash your content _first_, that way you know the hash you 
 
 In IPFS, hashes are referred to as Content Identifiers, or CID for short. In this exercise we're going to transform your data into content addressed data, that you can refer to via a CID, upload it to web3.storage and print out the CID.
 
-Create a _new_ file for your solution e.g. `ex3.js`. Import the w3up library and create the client as before. Install the module `files-from-path` from npm (`npm install files-from-path`) and import it like so:
+Create a _new_ file for your solution e.g. `ex3.mjs`. Import the w3up library and create the client as before. Install the module `files-from-path` from npm (`npm install files-from-path`) and import it like so:
 
 ```js
 import { filesFromPaths } from 'files-from-path'
@@ -20,5 +20,5 @@ Use the `uploadDirectory` function on the client to upload you favourite cat gif
 
 ─────────────────────────────────────────────────────────────────────────────
 * To print these instructions again, run: `$ADVENTURE_NAME print`
-* To verify your program, run: `$ADVENTURE_NAME verify program.js`
+* To verify your program, run: `$ADVENTURE_NAME verify program.mjs`
 * For help run: `$ADVENTURE_NAME help`

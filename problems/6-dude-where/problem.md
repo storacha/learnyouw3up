@@ -16,7 +16,7 @@ One answer is to move the re-assembily from DAG to file into the client - the en
 
 In this exercise you're going to fetch a CAR file from a "trustless" gateway (I know that sounds bad but actually it's good!) and re-assemble it into a file.
 
-Create a _new_ file for your solution e.g. `ex7.js`. You're going to need a couple of libraries, one for reading CARs and one for exporting files from an IPFS DAG:
+Create a _new_ file for your solution e.g. `ex7.mjs`. You're going to need a couple of libraries, one for reading CARs and one for exporting files from an IPFS DAG:
 
 ```sh
 npm install @ipld/car
@@ -39,5 +39,5 @@ Hint - these docs might come in helpful:
 
 ─────────────────────────────────────────────────────────────────────────────
 * To print these instructions again, run: `$ADVENTURE_NAME print`
-* To verify your program, run: `$ADVENTURE_NAME verify program.js`
+* To verify your program, run: `$ADVENTURE_NAME verify program.mjs`
 * For help run: `$ADVENTURE_NAME help`
