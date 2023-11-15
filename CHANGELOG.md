@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.3](https://github.com/web3-storage/learnyouw3up/compare/v1.3.2...v1.3.3) (2023-11-15)
+
+
+### Bug Fixes
+
+* use mjs ([13a4bda](https://github.com/web3-storage/learnyouw3up/commit/13a4bdac2a2eada5961df06327292c4cc7108f52))
+
 ## [1.3.2](https://github.com/web3-storage/learnyouw3up/compare/v1.3.1...v1.3.2) (2023-11-15)
 
 
