@@ -12,13 +12,15 @@ jobs:
     name: Check
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2.2.3
         with:
-          node-version: ${{matrix.node}}
-      - uses: bahmutov/npm-install@v1
-      - name: Lint
-        run: npm run lint
+          version: 8
+      - uses: actions/setup-node@v3
+        with:
+          cache: 'pnpm'
+      - run: pnpm install
+      - run: pnpm lint
   test:
     name: Test
     needs: check
@@ -29,13 +31,16 @@ jobs:
         os: [ubuntu-latest, macos-latest]
         node: [18, 20]
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2.2.3
         with:
-          node-version: ${{matrix.node}}
-      - uses: bahmutov/npm-install@v1
-      - name: Test Node.js
-        run: npm test
+          version: 8
+      - uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node_version }}
+          cache: 'pnpm'
+      - run: pnpm install
+      - run: pnpm test
   changelog:
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     name: Changelog
@@ -57,13 +62,16 @@ jobs:
       - test
       - changelog
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2.2.3
         with:
-          registry-url: https://registry.npmjs.org/
-          node-version: 18
-      - uses: bahmutov/npm-install@v1
-      - name: Publish
+          version: 8
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          registry-url: 'https://registry.npmjs.org'
+          cache: 'pnpm'
+      - run: pnpm install
+      - run: pnpm -r publish --access=public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
-        run: npm publish --access=public
