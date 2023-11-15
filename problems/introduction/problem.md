@@ -39,3 +39,8 @@ When you're done, verify your solution with `learnyouw3up verify ex1.js`
 and then type `learnyouw3up` and select the next exercise.
 
 Go now, I believe in you.
+
+─────────────────────────────────────────────────────────────────────────────
+* To print these instructions again, run: `$ADVENTURE_NAME print`
+* To verify your program, run: `$ADVENTURE_NAME verify program.js`
+* For help run: `$ADVENTURE_NAME help`

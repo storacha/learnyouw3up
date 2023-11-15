@@ -1,9 +1,11 @@
+
+
 ```js
 import * as Client from '@web3-storage/w3up-client'
 
 const client = await Client.create()
 const space = await client.createSpace('my space')
-const myAccount = await client.login('alan.shaw@protocol.ai')
+const myAccount = await client.login('my@email')
 
 while (true) {
   const res = await myAccount.plan.get()
