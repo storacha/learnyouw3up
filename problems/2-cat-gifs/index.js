@@ -1,3 +1,4 @@
+/* eslint n/no-callback-literal: 0 */
 import fs from 'node:fs'
 import path from 'node:path'
 import { execaNode } from 'execa'
@@ -19,8 +20,8 @@ export const verify = (args, cb) => {
     console.log(`Verifying ${filepath}...\n`)
     const { stdout, all } = await execaNode(filepath, [], { all: true })
     console.log(all ?? '')
-    
-    const str = String(stdout.split(`\n`).at(-1)).trim()
+
+    const str = String(stdout.split('\n').at(-1)).trim()
     let root
     try {
       root = Link.parse(str)

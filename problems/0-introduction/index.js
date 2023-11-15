@@ -1,3 +1,4 @@
+/* eslint n/no-callback-literal: 0 */
 import fs from 'node:fs'
 import path from 'node:path'
 import { execaNode } from 'execa'
@@ -19,7 +20,7 @@ export const verify = (args, cb) => {
     const { stdout, all } = await execaNode(filepath, [], { all: true })
     console.log(all ?? '')
 
-    const spaceDID = String(stdout.split(`\n`).at(-1)).trim()
+    const spaceDID = String(stdout.split('\n').at(-1)).trim()
     if (!Schema.did({ method: 'key' }).is(stdout.trim())) {
       cb(false)
       return console.log(`"${spaceDID}" is not a DID`)

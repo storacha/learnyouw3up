@@ -1,3 +1,4 @@
+/* eslint n/no-callback-literal: 0 */
 import fs from 'node:fs'
 import path from 'node:path'
 import { execaNode } from 'execa'
@@ -22,7 +23,7 @@ export const verify = (args, cb) => {
     console.log(all ?? '')
 
     const shards = []
-    for (const l of stdout.split(`\n`)) {
+    for (const l of stdout.split('\n')) {
       try {
         shards.push(Link.parse(l))
       } catch (err) {

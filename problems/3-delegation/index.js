@@ -1,3 +1,4 @@
+/* eslint n/no-callback-literal: 0 */
 import fs from 'node:fs'
 import path from 'node:path'
 import { execaNode } from 'execa'
@@ -39,7 +40,7 @@ export const verify = (args, cb) => {
 
     if (delegation.expiration < (Date.now() + oneHour) / 1000) {
       cb(false)
-      return console.error(`Delegation expires within the hour! Make it expire after 1 hour.`)
+      return console.error('Delegation expires within the hour! Make it expire after 1 hour.')
     }
 
     console.log(`Importing delegation: ${delegation.cid}`)

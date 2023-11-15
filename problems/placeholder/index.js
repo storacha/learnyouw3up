@@ -1,3 +1,4 @@
+/* eslint n/no-callback-literal: 0 */
 import fs from 'node:fs'
 import path from 'node:path'
 import { execaNode } from 'execa'
@@ -15,7 +16,7 @@ export const verify = (args, cb) => {
   (async () => {
     const filepath = path.resolve(args[0])
     console.log(`Verifying ${filepath}...\n`)
-    const { stdout, all } = await execaNode(filepath, [], { all: true })
+    const { all } = await execaNode(filepath, [], { all: true })
     console.log(all ?? '')
 
     cb(false)
