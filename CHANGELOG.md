@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.1](https://github.com/web3-storage/learnyouw3up/compare/v1.3.0...v1.3.1) (2023-11-15)
+
+
+### Bug Fixes
+
+* missing dependency ([f0a851f](https://github.com/web3-storage/learnyouw3up/commit/f0a851fb1d5205d7e3e0ec7fef030d876ac4e63f))
+
 ## [1.3.0](https://github.com/web3-storage/learnyouw3up/compare/v1.2.0...v1.3.0) (2023-11-15)
 
 
