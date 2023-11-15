@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/web3-storage/learnyouw3up/compare/v1.0.0...v1.1.0) (2023-11-15)
+
+
+### Features
+
+* add memes exercise ([4e7150e](https://github.com/web3-storage/learnyouw3up/commit/4e7150eb25236952de42175b2456c824214eff15))
+
 ## 1.0.0 (2023-11-15)
 
 
