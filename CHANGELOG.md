@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/web3-storage/learnyouw3up/compare/v1.1.0...v1.2.0) (2023-11-15)
+
+
+### Features
+
+* add dudewhere exercise ([0525f91](https://github.com/web3-storage/learnyouw3up/commit/0525f91640018aa78c50fab32593ab8f3e029e04))
+
 ## [1.1.0](https://github.com/web3-storage/learnyouw3up/compare/v1.0.0...v1.1.0) (2023-11-15)
 
 
