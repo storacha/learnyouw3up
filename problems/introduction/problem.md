@@ -16,9 +16,9 @@ npm install @web3-storage/w3up-client
 ```
 
 Nice one. Now, this is how things are going to work. You make a JS file for
-each exercise in the directory you installed the library e.g. `exercise1.js`.
+each exercise in the directory you installed the library e.g. `ex1.js`.
 You write the code that solves the problem, and then the workshopper will
-verify your solution when you type: `learnyounode verify exercise1.js`.
+verify your solution when you type: `learnyounode verify ex1.js`.
 
 When you succeed, you type learnyouw3up again and select the next exercise.
 
@@ -30,11 +30,12 @@ we're going to print out your DID. Yeah, like an ID, but DECENTRALIZED. Woof.
 Put these JavaScripts into your file:
 
 ```js
+import * as Client from '@web3-storage/w3up-client'
 const client = await Client.create()
 console.log(client.did())
 ```
 
-When you're done, verify your solution with `learnyouw3up verify exercise1.js`
+When you're done, verify your solution with `learnyouw3up verify ex1.js`
 and then type `learnyouw3up` and select the next exercise.
 
 Go now, I believe in you.

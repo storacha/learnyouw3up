@@ -30,7 +30,7 @@
     "msee": "^0.3.5"
   },
   "devDependencies": {
-    "@web3-storage/w3up-client": "^10.2.0",
+    "@web3-storage/w3up-client": "^10.3.0",
     "standard": "^17.1.0"
   }
 }

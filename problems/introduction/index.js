@@ -15,11 +15,14 @@ export const solution = msee.parse(fs.readFileSync(new URL('./solution.md', impo
 export const verify = (args, cb) => {
   (async () => {
     const filepath = path.resolve(args[0])
+    console.log(`Verifying ${filepath}...\n`)
     const { stdout, all } = await execaNode(filepath, [], { all: true })
     console.log(all ?? '')
 
+    const spaceDID = String(stdout.split(`\n`).at(-1)).trim()
     if (!Schema.did({ method: 'key' }).is(stdout.trim())) {
-      return cb(false)
+      cb(false)
+      return console.log(`"${spaceDID}" is not a DID`)
     }
 
     cb(true)
