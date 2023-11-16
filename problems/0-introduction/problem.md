@@ -14,7 +14,7 @@ npm install @web3-storage/w3up-client
 
 Nice one. Now, this is how things are going to work. You make a JS file for each exercise in the directory you installed the library e.g. `ex1.mjs`. You write the code that solves the problem, and then the workshopper will verify your solution when you type: `learnyounode verify ex1.mjs`.
 
-When you succeed, you type learnyouw3up again and select the next exercise.
+When you succeed, you type `learnyouw3up` again and select the next exercise.
 
 Rinse and repeat for each excercise. Got it? Good.
 
