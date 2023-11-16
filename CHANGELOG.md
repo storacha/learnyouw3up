@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.4](https://github.com/web3-storage/learnyouw3up/compare/v1.3.3...v1.3.4) (2023-11-15)
+
+
+### Bug Fixes
+
+* reword ([944b27c](https://github.com/web3-storage/learnyouw3up/commit/944b27c7041d9bef6073894ee4031f434907d674))
+
 ## [1.3.3](https://github.com/web3-storage/learnyouw3up/compare/v1.3.2...v1.3.3) (2023-11-15)
 
 
