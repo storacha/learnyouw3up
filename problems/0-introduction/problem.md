@@ -18,7 +18,7 @@ When you succeed, you type `learnyouw3up` again and select the next exercise.
 
 Rinse and repeat for each excercise. Got it? Good.
 
-Ok, now I need you to make that JS file we talked about. For this exercise we're going to print out your DID. Yeah, like an ID, but DECENTRALIZED. Woof.
+Ok, now I need you to make that JS file we talked about, and call it `program.mjs`. For this exercise we're going to print out your DID. Yeah, like an ID, but DECENTRALIZED. Woof.
 
 Put these JavaScripts into your file:
 
