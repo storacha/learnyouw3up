@@ -27,10 +27,10 @@
   "dependencies": {
     "@ipld/dag-json": "^10.1.5",
     "@ucanto/core": "^9.0.1",
-    "@ucanto/validator": "^9.0.0",
-    "@web3-storage/access": "^17.1.0",
+    "@ucanto/validator": "^9.0.1",
+    "@web3-storage/access": "^18.0.1",
     "@web3-storage/data-segment": "^5.0.0",
-    "@web3-storage/w3up-client": "^11.0.0",
+    "@web3-storage/w3up-client": "^11.0.1",
     "adventure": "^2.11.1",
     "execa": "^8.0.1",
     "msee": "^0.3.5",
