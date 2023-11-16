@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.7](https://github.com/web3-storage/learnyouw3up/compare/v1.3.6...v1.3.7) (2023-11-16)
+
+
+### Bug Fixes
+
+* trigger release ([12af9ac](https://github.com/web3-storage/learnyouw3up/commit/12af9ac7719d1a2e8a80dfed553d1b6efc55663a))
+
 ## [1.3.6](https://github.com/web3-storage/learnyouw3up/compare/v1.3.5...v1.3.6) (2023-11-16)
 
 
