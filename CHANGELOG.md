@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.3.5](https://github.com/web3-storage/learnyouw3up/compare/v1.3.4...v1.3.5) (2023-11-16)
+
+
+### Bug Fixes
+
+* code block around ([00c42fb](https://github.com/web3-storage/learnyouw3up/commit/00c42fba26cc05346aeec95e98c29cf78b7a7c16))
+* coupon wording ([766d40b](https://github.com/web3-storage/learnyouw3up/commit/766d40b282be132559d8812d12489690450a2c98))
+
 ## [1.3.4](https://github.com/web3-storage/learnyouw3up/compare/v1.3.3...v1.3.4) (2023-11-15)
 
 
