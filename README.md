@@ -6,7 +6,7 @@ Learn you the w3up for much win! Workshopper for learning how to use w3up - a UC
 
 ## Install
 
-First, install Node.js >= 18 from [nodejs.org](https://nodejs.org).
+First, install Node.js >= 18 from [nodejs.org](https://nodejs.org). 
 
 Next install the workshop:
 
@@ -31,3 +31,4 @@ Feel free to join in. All welcome. Please [open an issue](https://github.com/web
 ## License
 
 Dual-licensed under [MIT + Apache 2.0](https://github.com/web3-storage/learnyouw3up/blob/main/LICENSE.md)
+
