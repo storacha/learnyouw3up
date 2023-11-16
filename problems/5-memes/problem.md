@@ -14,7 +14,7 @@ https://w3s.link/ipfs/<CID>
 
 The CID of the data to fetch will be provided to `process.stdin`.
 
-You should use the `multiformats` library to `decode` the CID from it's compact binary form and then format it as a string in the URL.
+You should install the `multiformats` library from npm (`npm install multiformats`) to `decode` the CID from it's compact binary form and then format it as a string in the URL.
 
 Finally send a HTTP request to fetch the content and write the data directly to `process.stdout`.
 
