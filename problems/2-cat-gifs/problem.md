@@ -20,5 +20,5 @@ Use the `uploadDirectory` function on the client to upload you favourite cat gif
 
 ─────────────────────────────────────────────────────────────────────────────
 * To print these instructions again, run: `$ADVENTURE_NAME print`
-* To verify your program, run: `$ADVENTURE_NAME verify program.mjs`
+* To verify your program, run: `$ADVENTURE_NAME verify ex3.mjs`
 * For help run: `$ADVENTURE_NAME help`

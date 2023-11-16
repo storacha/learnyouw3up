@@ -20,5 +20,5 @@ Good luck!
 
 ─────────────────────────────────────────────────────────────────────────────
 * To print these instructions again, run: `$ADVENTURE_NAME print`
-* To verify your program, run: `$ADVENTURE_NAME verify program.mjs`
+* To verify your program, run: `$ADVENTURE_NAME verify ex5.mjs`
 * For help run: `$ADVENTURE_NAME help`
