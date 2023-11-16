@@ -62,7 +62,7 @@ Once provisioned, it's a really good idea to setup recovery, so that when you mo
 await space.createRecovery(myAccount.did())
 ```
 
-Finally, save the space and logged its DID, for verification:
+Finally, save the space and log its DID, for verification:
 
 ```js
 await space.save()
