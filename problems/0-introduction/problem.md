@@ -9,6 +9,7 @@ Let's get you setup. Make a new directory, and install the client library like s
 ```sh
 mkdir learnyouw3up
 cd learnyouw3up
+npm init -y
 npm install @web3-storage/w3up-client
 ```
 
