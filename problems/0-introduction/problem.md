@@ -9,6 +9,7 @@ Let's get you setup. Make a new directory, and install the client library like s
 ```sh
 mkdir $ADVENTURE_NAME
 cd $ADVENTURE_NAME
+npm init -y
 npm install @web3-storage/w3up-client
 ```
 
