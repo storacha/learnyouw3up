@@ -34,5 +34,5 @@ One last thing, make sure the delegation remains valid for **more than one hour*
 
 ─────────────────────────────────────────────────────────────────────────────
 * To print these instructions again, run: `$ADVENTURE_NAME print`
-* To verify your program, run: `$ADVENTURE_NAME verify program.mjs`
+* To verify your program, run: `$ADVENTURE_NAME verify ex4.mjs`
 * For help run: `$ADVENTURE_NAME help`

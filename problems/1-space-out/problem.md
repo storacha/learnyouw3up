@@ -62,7 +62,7 @@ Once provisioned, it's a really good idea to setup recovery, so that when you mo
 await space.createRecovery(myAccount.did())
 ```
 
-Finally, save the space and log out it's DID, for verification:
+Finally, save the space and log its DID, for verification:
 
 ```js
 await space.save()
@@ -71,5 +71,5 @@ console.log(space.did())
 
 ─────────────────────────────────────────────────────────────────────────────
 * To print these instructions again, run: `$ADVENTURE_NAME print`
-* To verify your program, run: `$ADVENTURE_NAME verify program.mjs`
+* To verify your program, run: `$ADVENTURE_NAME verify ex2.mjs`
 * For help run: `$ADVENTURE_NAME help`
