@@ -17,7 +17,7 @@ Nice one. Now, this is how things are going to work. You make a JS file for each
 
 When you succeed, you type `$ADVENTURE_NAME` again and select the next exercise.
 
-Rinse and repeat for each excercise. Got it? Good.
+Rinse and repeat for each exercise. Got it? Good.
 
 Ok, now I need you to make that JS file we talked about, and call it `ex1.mjs`. For this exercise we're going to print out your DID. Yeah, like an ID, but DECENTRALIZED. Woof.
 
