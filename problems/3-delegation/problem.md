@@ -19,7 +19,7 @@ Your program should read from `process.stdin`, create a delegation for the `uplo
 DID => your program => delegation
 ```
 
-Then the workshop will be able to **invoke** the capability to list the items _you've_ uploaded to _your_ space. It'll verify it can find that cat gif you uploaded in the previous exercise.
+Then the workshop will be able to **invoke** the capability to list the items _you've_ uploaded to _your_ space. It'll verify it can find that cat meme you uploaded in the previous exercise.
 
 One last thing, make sure the delegation remains valid for **more than one hour**.
 
