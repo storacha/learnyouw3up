@@ -14,15 +14,15 @@ On the third web, you hash your content first. This means the hash you generate 
 
 **Let's Get Started!**
 
-We're going to transform your cat memes into content-addressed data, upload them to web3.storage, and print out their unique CID (Content Identifier). Once you downloaded the last meme your friend sent you, continue with:
+Download a meme locally (or use the one that you already have!), upload them to web3.storage, and print out their unique CID (Content Identifier). Once you downloaded the last meme your friend sent you, continue with:
 
 **1. Create a New File**
 Create a _new_ file, like `ex3.mjs`.
 **2. Import w3up and create the client**
 Import the w3up library and create the client as before. 
-**3. Instal the `files-from-path`**
-It  helps read files from your local file system and transforms file paths into a format that can be uploaded to web3.storage. Without this module, you’d be stuck doing all the heavy lifting of file reading and formatting. And who has time for it in this economy?
-Install `npm install files-from-path` and import 
+**3. Instal the `files-from-path` module**
+It helps read files from your local file system and transforms file paths into a format that can be uploaded to web3.storage. Without this module, you’d be stuck doing all the heavy lifting of file reading and formatting - who has time for that in this economy?
+Install `npm install files-from-path` and import:
 
 ```js
 import { filesFromPaths } from 'files-from-path'
@@ -32,14 +32,14 @@ Specify the path to the meme:
 ```js
 const files = await filesFromPaths(['path-to-your-meme']) 
 ```
-and upload it with using function uploadDirectory on client:
+and upload it with using the client's `uploadDirectory` function:
 ```js
-const root = await client.uploadDirectory(files);
+const root = await client.uploadDirectory(files)
 ```
 
-End with printing CID console.log(root.toString());
+Finally, print the CID:
 ```js
-console.log(root.toString());
+console.log(root.toString())
 ```
 
 ─────────────────────────────────────────────────────────────────────────────
