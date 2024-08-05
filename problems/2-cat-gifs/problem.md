@@ -20,7 +20,7 @@ Download a meme locally (or use the one that you already have!), upload them to 
 Create a _new_ file, like `ex3.mjs`.
 **2. Import w3up and create the client**
 Import the w3up library and create the client as before. 
-**3. Instal the `files-from-path` module**
+**3. Install the `files-from-path` module**
 It helps read files from your local file system and transforms file paths into a format that can be uploaded to web3.storage. Without this module, you’d be stuck doing all the heavy lifting of file reading and formatting - who has time for that in this economy?
 Install `npm install files-from-path` and import:
 
