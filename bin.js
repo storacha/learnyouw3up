@@ -18,7 +18,7 @@ const shop = adventure({
 
 shop.add('Introduction: UCAN do it!', () => IntroductionProblem)
 shop.add('Lets space out', () => SpaceOutProblem)
-shop.add('Storing cat gifs for fun and gossip', () => CatGifsProblem)
+shop.add('Storing cat memes for fun and gossip', () => CatMemesProblem)
 shop.add('Delegation, invocation and procrastination', () => DelegationProblem)
 shop.add('Infinite avatar compression!', () => InfiniteCompressionProblem)
 shop.add('Memes for my eyes', () => MemesProblem)
