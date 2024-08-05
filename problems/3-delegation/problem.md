@@ -1,6 +1,6 @@
 # Delegation, invocation and procrastination
 
-Excellent cat gifs. Well done you.
+Excellent cat memes. Well done you.
 
 Now, lets talk UCAN.
 
