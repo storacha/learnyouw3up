@@ -1,22 +1,46 @@
-# Storing cat gifs for fun and gossip
+# Storing cat memes for fun and gossip
 
-These cat gifs are not going to store themselves. Lets hurl them into the permanent web where they can be revered **forever**.
+These cat memes of yours are not going to store themselves. Let's catapult them into the permanent web where they can be adored **forever**.
 
 But wait, what did you just say? Permanent web? Yeah, like IPFS.
 
-IPFS uses content addressing (sometimes known as hash addressing) where you refer to data by a "hash" that is created from the data itself. If the data changes, the hash changes. Anyone can store and distribute your data because the hash guarantees the data cannot change. Imagine the caching possibilities!
+**What is the Permanent Web?**
 
-In the third web, you hash your content _first_, that way you know the hash you generated refers to the content you generated it from, and if you fetch the content by it's hash, you can verify that the content you receive hasn't been tampered with because it "hashes" to the same value.
+Imagine a world where your favorite cat memes are preserved forever. That's the magic of IPFS (InterPlanetary File System). IPFS uses content addressing, a fancy way of saying you refer to data by a "hash" created from the data itself. If the data changes, the hash changes too. This ensures that the data remains unchanged and untampered with. Think of it as a digital fingerprint for your memes!
 
-In IPFS, hashes are referred to as Content Identifiers, or CID for short. In this exercise we're going to transform your data into content addressed data, that you can refer to via a CID, upload it to web3.storage and print out the CID.
+**Why Content Addressing?**
 
-Create a _new_ file for your solution e.g. `ex3.mjs`. Import the w3up library and create the client as before. Install the module `files-from-path` from npm (`npm install files-from-path`) and import it like so:
+On the third web, you hash your content first. This means the hash you generate is unique to the content you created. If you fetch the content by its hash, you can be sure that the content hasn't been tampered with because it "hashes" to the same value. It's like a super-secure way to keep your cat memes pristine and perfect.
+
+**Let's Get Started!**
+
+Download a meme locally (or use the one that you already have!), upload them to web3.storage, and print out their unique CID (Content Identifier). Once you downloaded the last meme your friend sent you, continue with:
+
+**1. Create a New File**
+Create a _new_ file, like `ex3.mjs`.
+**2. Import w3up and create the client**
+Import the w3up library and create the client as before. 
+**3. Install the `files-from-path` module**
+It helps read files from your local file system and transforms file paths into a format that can be uploaded to web3.storage. Without this module, you’d be stuck doing all the heavy lifting of file reading and formatting - who has time for that in this economy?
+Install `npm install files-from-path` and import:
 
 ```js
 import { filesFromPaths } from 'files-from-path'
 ```
+**4. Upload the meme**
+Specify the path to the meme:
+```js
+const files = await filesFromPaths(['path-to-your-meme']) 
+```
+and upload it with using the client's `uploadDirectory` function:
+```js
+const root = await client.uploadDirectory(files)
+```
 
-Use the `uploadDirectory` function on the client to upload you favourite cat gif from your local file system to web3.storage. You'll receive a CID for the content, use `console.log` to print it out.
+Finally, print the CID:
+```js
+console.log(root.toString())
+```
 
 ─────────────────────────────────────────────────────────────────────────────
 * To print these instructions again, run: `$ADVENTURE_NAME print`
