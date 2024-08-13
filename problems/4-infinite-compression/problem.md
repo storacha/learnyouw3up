@@ -1,22 +1,42 @@
 # Infinite avatar compression!
 
-YES BOSS! That's how you do it. Now your minions can do tasks on your behalf. They can even re-delegate to others! It's delegations all the way down.
+YAS BOSS! That's how you do it! 
 
-One thing to note about delegations is that they're not secrets, they can only be used by the target "audience" - in this case the DID of the workshop. So you can embed in scripts and/or send them in emails or whatever really. They're just a proof that you have been given the capability to do something.
+Let's move on.
+## What’s the Deal with Infinite Compression?
+Imagine compressing your data over and over until it’s reduced to its absolute minimum size. While true infinite compression is more of a thought experiment, in this challenge, you’ll get a taste of it by working with Content-Addressed Archives (CARs) and Directed Acyclic Graphs (DAGs).
+ 
+The DAG is packed into a CAR 🚗 - beep beep. CAR is kinda like a `tar` file but for DAGs. It's a useful container format for transferring content addressed data over HTTP.
 
-Ok, moving on. We talked about content addressing a couple of exercises ago. Right? Yeah well that content addressed data that you uploaded is now a DAG. Yeah, a DAG - Directed Acyclic Graph. So I don't know if you know anything about hashing but the CID you received is no ordinary hash. It's a CID that addresses a graph of _many_ nodes each with their _own_ CID...and with this one very special property - no cycles. Cool huh?! Fun fact: the CID you have is the CID of the root node of the graph. It's the hash of the node's data **and** any links it has to other nodes.
+**Here’s how it works:** when you upload a file, it gets split into smaller pieces called CAR shards. Each of these shards gets a unique identifier called a CID (Content Identifier). When you’ve uploaded all the shards, they come together to form a DAG—a super-organized structure that ties everything up neatly with a root CID.
 
-The DAG is packed into a CAR 🚗 - beep beep. jk jk a CAR is a Content-Addressed Archive. It's kinda like a `tar` file but for DAGs. It's a useful container format for transferring content addressed data over HTTP.
+## Your Task:
+1. Start by creating a new file, like ex5.mjs.
+2. Upload Content: You’ll upload a file—maybe another cat meme—just like you did before. But this time, the file gets split into multiple shards.
+```js
+const client = await Client.create()
+const files = await filesFromPaths(['./awesome-cat-meme.jpg'])
+```
+3. Print Each Shard’s CID: As each shard is stored, you’ll print out its CID. Think of these as the pieces of your compression puzzle.
+```js
+const root = await client.uploadDirectory(files, {
+  onShardStored: shard => console.log(shard.cid.toString())
+})
+```
+4. Reveal the DAG Root: After all the shards are uploaded, print the CID of the root of the DAG. This is the final piece that ties everything together.
+```js
+console.log(root.toString())
+```
 
-In web3.storage, we content address CARs as well! So we generate a hash for the CAR and invoke a `store/add` capability, passing the CAR CID as parameters to the invocation. The service will reply with a signed URL - a place to put the CAR that will only accept data that hashes to the CID of the CAR.
+## Why It’s Awesome:
+**Efficiency:** You’re not just uploading data—you’re breaking it down and managing it in a super-efficient way.
+**Organization:** The DAG structure helps keep your data neatly organized, and the CIDs act as a digital map to navigate it all.
 
-**BUT** if we know the CAR you want to send has already been stored then we'll send back a flag to say that you don't need to send it! Hey presto, infinite compression! Joking aside, isn't content addressing awesome?!
+## Next Steps:
+**Run the Code:** Try running your code to see the CIDs of each shard and the final DAG root.
+**Explore Further:** Think about how this structure could be used in larger projects or how you might expand on it.
 
-I know loads of text, but one more thing, sometimes y'all got big datas. If the datas are big, we split the DAG across multiple CAR files. In this exercise we're going to store something else and log out the CAR CIDs a.k.a. the CID of the CAR _shards_.
-
-Create a _new_ file for your solution e.g. `ex5.mjs` and upload something like you did in the cat memes exercise. This time though, print out the CIDs of the CAR shards as they are sent, and then _finally_ the CID of the root of the DAG. Your output is expected to be newline delimited.
-
-Good luck!
+Now, it’s your turn to dive into the world of infinite compression! Good luck, and have fun compressing! 🚀
 
 ─────────────────────────────────────────────────────────────────────────────
 * To print these instructions again, run: `$ADVENTURE_NAME print`
