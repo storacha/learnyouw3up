@@ -12,11 +12,11 @@ jobs:
     name: Check
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: pnpm/action-setup@v2.2.3
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
         with:
-          version: 8
-      - uses: actions/setup-node@v3
+          version: 9
+      - uses: actions/setup-node@v4
         with:
           cache: 'pnpm'
       - run: pnpm install
@@ -31,11 +31,11 @@ jobs:
         os: [ubuntu-latest, macos-latest]
         node: [18, 20]
     steps:
-      - uses: actions/checkout@v3
-      - uses: pnpm/action-setup@v2.2.3
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
         with:
-          version: 8
-      - uses: actions/setup-node@v3
+          version: 9
+      - uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node_version }}
           cache: 'pnpm'
@@ -48,7 +48,7 @@ jobs:
     outputs:
       releases_created: ${{ steps.tag-release.outputs.releases_created }}
     steps:
-      - uses: GoogleCloudPlatform/release-please-action@v3
+      - uses: googleapis/release-please-action@v4
         id: tag-release
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
@@ -62,11 +62,11 @@ jobs:
       - test
       - changelog
     steps:
-      - uses: actions/checkout@v3
-      - uses: pnpm/action-setup@v2.2.3
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
         with:
-          version: 8
-      - uses: actions/setup-node@v3
+          version: 9
+      - uses: actions/setup-node@v4
         with:
           node-version: 20
           registry-url: 'https://registry.npmjs.org'
