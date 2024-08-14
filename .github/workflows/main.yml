@@ -45,6 +45,9 @@ jobs:
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     name: Changelog
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
     outputs:
       releases_created: ${{ steps.tag-release.outputs.releases_created }}
     steps:
@@ -57,6 +60,9 @@ jobs:
     if: github.event_name == 'push' && github.ref == 'refs/heads/main' && needs.changelog.outputs.releases_created
     name: Release
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
     needs:
       - check
       - test
