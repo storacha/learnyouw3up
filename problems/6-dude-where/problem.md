@@ -6,7 +6,7 @@ Alright, you’ve made it this far, so let’s take things up a notch. We’ve t
 A CAR file contains a DAG—a graph of nodes that represent your data. When you fetch data over HTTP, it’s all nice and tidy, but there’s a catch: you can’t just trust the bytes you receive. You need to verify that what you got actually matches the CID you were expecting. This means re-assembling the data into its original DAG structure and making sure everything checks out.
 
 ## What You Need to Do:
-1. Yes, you guessed it - file number 7 - ex7.mjs, for this challenge.
+1. Yes, you guessed it - file number 7 - `ex7.mjs`, for this challenge.
 2. Install Necessary Libraries: You’ll need two libraries to get this done: `@ipld/car` for reading CAR files and `ipfs-unixfs-exporter` for exporting files from an IPFS DAG.
 ```js
 npm install @ipld/car
