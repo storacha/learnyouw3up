@@ -34,7 +34,7 @@ process.stdout.write(await res.text())
 
 ## What’s Happening Here?
 **CID Decoding:** The CID you receive is in a compact binary form. You use the multiformats library to decode it into a human-readable string that you can use in the URL.
-**Gateway Flexibility:** While we use w3s.link here, you can use any gateway that supports IPFS (InterPlanetary File System).
+**Gateway Flexibility:** We use w3s.link here, but you can use any IPFS gateway.
 **Real-time Retrieval:** Once you have the CID, fetching content from a decentralized network is as simple as sending a request to a URL.
 
 ## Why This is Cool:
