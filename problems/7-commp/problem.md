@@ -13,7 +13,6 @@ The fun part? These deals are like massive shipping containers that need to be f
 ## What You’re Going to Do:
 1. For the last time... `ex8.mjs`, you know the drill.
 2. Install the Necessary Libraries: You’ll need the @web3-storage/data-segment for parsing the Piece CID and @ipld/dag-json for encoding the output.
-```js
 npm install @web3-storage/data-segment
 npm install @ipld/dag-json
 ```
