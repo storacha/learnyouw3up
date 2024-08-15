@@ -3,7 +3,7 @@
 Ain't you cool? Now, let's shift gears and dive into the next challenge: retrieving content from a decentralized network.
 
 ## The Challenge:
-Every meme (or any other file) you upload is instantly available for retrieval. In this exercise, your task is to fetch a text file from the public gateway using its root CID. The cool part? You can use any gateway, thanks to the decentralized nature of peer-to-peer networking. But for simplicity, we’ll use the w3s.link gateway.
+Every meme (or any other file) you upload is instantly available for retrieval. In this exercise, your task is to fetch a text file from a public gateway using its root CID. The cool part? You can use any gateway, thanks to the decentralized nature of peer-to-peer networking. But for simplicity, we’ll use the `w3s.link` gateway.
 
 ## What You Need to Do:
 1. Start by creating a new JavaScript file, ex6.mjs. 
