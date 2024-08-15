@@ -15,7 +15,7 @@ import { CID } from 'multiformats'
 
 const cid = CID.decode(fs.readFileSync(process.stdin.fd))
 ```
-3. Construct the Gateway URL: Format the URL to fetch the content using the w3s.link gateway. The URL format is:
+3. Construct the Gateway URL: Format the URL to fetch the content using the `w3s.link` gateway. The URL format is:
 ```js
 https://w3s.link/ipfs/<CID>
 ```
