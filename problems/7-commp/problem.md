@@ -5,7 +5,6 @@ Great job 👏 You are smashing it. Keep on truckin'.
 So, lets talk Filecoin...
 
 ## The Challenge
-The Challenge:
 Filecoin is a decentralized storage network built on IPFS protocols. When you upload data using w3up, it generates a DAG and its corresponding root CID. This DAG is packed into CAR files (shards), and each shard gets a Piece CID. This Piece CID is crucial because it’s how your data is addressed in deals with Filecoin Storage Providers (SPs).
 
 The fun part? These deals are like massive shipping containers that need to be filled up. Your data goes through an aggregation pipeline, which ultimately leads to it being stored in a deal with a Filecoin SP. The process includes inclusion proofs and data aggregation proofs—basically, all the cryptographic magic that proves your data is securely stored and retrievable.
