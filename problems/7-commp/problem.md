@@ -11,7 +11,7 @@ Filecoin is a decentralized storage network built on IPFS protocols. When you up
 The fun part? These deals are like massive shipping containers that need to be filled up. Your data goes through an aggregation pipeline, which ultimately leads to it being stored in a deal with a Filecoin SP. The process includes inclusion proofs and data aggregation proofs—basically, all the cryptographic magic that proves your data is securely stored and retrievable.
 
 ## What You’re Going to Do:
-1. For the last time... ex8.mjs, you know the drill.
+1. For the last time... `ex8.mjs`, you know the drill.
 2. Install the Necessary Libraries: You’ll need the @web3-storage/data-segment for parsing the Piece CID and @ipld/dag-json for encoding the output.
 ```js
 npm install @web3-storage/data-segment
