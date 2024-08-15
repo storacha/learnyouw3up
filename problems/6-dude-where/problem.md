@@ -7,7 +7,7 @@ A CAR file contains a DAG—a graph of nodes that represent your data. When you 
 
 ## What You Need to Do:
 1. Yes, you guessed it - file number 7 - ex7.mjs, for this challenge.
-2. Install Necessary Libraries: You’ll need two libraries to get this done: @ipld/car for reading CAR files and ipfs-unixfs-exporter for exporting files from an IPFS DAG.
+2. Install Necessary Libraries: You’ll need two libraries to get this done: `@ipld/car` for reading CAR files and `ipfs-unixfs-exporter` for exporting files from an IPFS DAG.
 ```js
 npm install @ipld/car
 npm install ipfs-unixfs-exporter
