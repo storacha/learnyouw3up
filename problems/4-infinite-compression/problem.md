@@ -11,7 +11,7 @@ The DAG is packed into a CAR 🚗 - beep beep. CAR is kinda like a `tar` file bu
 **Here’s how it works:** when you upload a file, it gets split into smaller pieces called CAR shards. Each of these shards gets a unique identifier called a CID (Content Identifier). When you’ve uploaded all the shards, they come together to form a DAG—a super-organized structure that ties everything up neatly with a root CID.
 
 ## Your Task:
-1. Start by creating a new file, like ex5.mjs.
+1. Start by creating a new file, like `ex5.mjs`.
 2. Upload Content: You’ll upload a file—maybe another cat meme—just like you did before. But this time, the file gets split into multiple shards.
 ```js
 const client = await Client.create()
