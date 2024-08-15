@@ -20,7 +20,7 @@ const path = '/cat2.txt'
 const res = await fetch(`https://dag.w3s.link/ipfs/${cid}?format=car`)
 const bytes = new Uint8Array(await res.arrayBuffer())
 ```
-4. Read the CAR File: Use CarReader from @ipld/car to read the CAR file. This step is crucial because you need to adapt this reader to work with the exporter from ipfs-unixfs-exporter.
+4. Read the CAR File: Use CarReader from `@ipld/car` to read the CAR file. This step is crucial because you need to adapt this reader to work with the exporter from `ipfs-unixfs-exporter`.
 ```js
 const reader = await CarReader.fromBytes(bytes)
 ```
