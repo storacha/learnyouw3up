@@ -2,7 +2,7 @@
 import adventure from 'adventure'
 import * as IntroductionProblem from './problems/0-introduction/index.js'
 import * as SpaceOutProblem from './problems/1-space-out/index.js'
-import * as CatMemesProblem from './problems/2-cat-gifs/index.js'
+import * as CatMemesProblem from './problems/2-cat-memes/index.js'
 import * as DelegationProblem from './problems/3-delegation/index.js'
 import * as InfiniteCompressionProblem from './problems/4-infinite-compression/index.js'
 import * as MemesProblem from './problems/5-memes/index.js'
