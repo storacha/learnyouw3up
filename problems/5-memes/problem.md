@@ -40,7 +40,7 @@ process.stdout.write(await res.text())
 ## Why This is Cool:
 This challenge shows you how easy it is to retrieve content from a decentralized network. It’s like pulling a meme out of thin air—instant access, no matter where the file is stored on the network.
 
-Now, create that ex6.mjs file, plug in your code, and see how seamlessly you can fetch content from the decentralized web. Happy coding! 🚀
+Now, create that `ex6.mjs` file, plug in your code, and see how seamlessly you can fetch content from the decentralized web. Happy coding! 🚀
 
 **Next Steps:**
 - Try fetching different types of content by changing the CID.
