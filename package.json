@@ -8,6 +8,7 @@
     "learnyouw3up": "bin.js"
   },
   "scripts": {
+    "start": "node bin.js",
     "lint": "standard",
     "test": "echo \"Error: no test specified\""
   },
