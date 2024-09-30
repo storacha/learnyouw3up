@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.4.0](https://github.com/storacha/learnyouw3up/compare/v1.3.7...v1.4.0) (2024-09-30)
+
+
+### Features
+
+* add start script ([8b99f10](https://github.com/storacha/learnyouw3up/commit/8b99f104b1d3db09f9c9f4191add902abdf25aa4))
+
+
+### Bug Fixes
+
+* typo ([d661501](https://github.com/storacha/learnyouw3up/commit/d661501bb8b675bccbb5465e44ed8bc7e2f118e9))
+
 ## [1.3.7](https://github.com/web3-storage/learnyouw3up/compare/v1.3.6...v1.3.7) (2023-11-16)
 
 
