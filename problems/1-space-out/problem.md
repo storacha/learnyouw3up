@@ -10,36 +10,39 @@ In this exercise your challenge is to setup a space where you can upload data to
 
 Yes - each space has a DID as well!
 
-Anyway, lets get started. Create a _new_ file for your solution e.g. `ex2.mjs`. Import the w3up library and create the client as before. Now, lets use `createSpace` to, you guessed it, create a new space:
+Anyway, lets get started. Create a _new_ file for your solution e.g. `ex2.mjs`. Import the w3up library and create the client as before. Now, you need to create a space - a place you can upload data to...but wait, there's a catch. To make your space usable, you need to "provision" it. There's two options here. You can provision it with your account _or_ you can redeem a coupon. If you don't have a coupon or are unsure what to do, choose option 1.
 
-```js
-const space = await client.createSpace('my space')
-```
+## 1. Create a space and provision it using your own account.
 
-To make your space usable, you need to set it up with a storage provider. We call this _provisioning_. There's two options here:
-
-## 1. Provision it using your own account.
+First, login to your account:
 
 ```js
 const myAccount = await client.login('your@email')
 
-// wait for payment plan to be selected
-while (true) {
-  const res = await myAccount.plan.get()
-  if (res.ok) break
-  console.log('Waiting for payment plan to be selected...')
-  await new Promise(resolve => setTimeout(resolve, 1000))
-}
-
-// provision the space
-await myAccount.provision(space.did())
+// wait for payment plan to be selected (there's a free option!)
+await myAccount.plan.wait()
 ```
 
-When you call login, the script will wait until you click on the link in the email. We also need to wait for a payment plan to be selected.
+When you call login, the script will wait until you click on the link in the email. We also need to wait for a payment plan to be selected (there's a free option!).
 
-## 2. Provision it with a coupon.
+Now use `createSpace` to, you guessed it, create a new space. Pass your account to have it provisioned automatically:
 
 ```js
+// NOTE: pass your account for provisioning!
+const space = await client.createSpace('my space', { account: myAccount })
+```
+
+Finally, log the DID of the space, for verification:
+
+```js
+console.log(space.did())
+```
+
+## 2. Create a space and provision it with a coupon.
+
+```js
+const space = await client.createSpace('my space')
+
 // fetch the coupon
 const res = await fetch('https://url-provided-to-you')
 const data = new Uint8Array(await res.arrayBuffer())
@@ -48,24 +51,13 @@ const data = new Uint8Array(await res.arrayBuffer())
 const access = await client.coupon.redeem(data)
 await space.provision(access)
 
-// optionally, create an account so you can access the space from another
-// device (see below).
-//
-// click the link in the email, but selecting a payment plan is optional, 
-// because the coupon is funding your space! \o/
-const myAccount = await client.login('your@email')
-```
-
-Once provisioned, it's a really good idea to setup recovery, so that when you move to a different device you can still access your space:
-
-```js
-await space.createRecovery(myAccount.did())
-```
-
-Finally, save the space and log its DID, for verification:
-
-```js
+// save the space to the client's local storage
 await space.save()
+```
+
+Finally, log the DID of the space, for verification:
+
+```js
 console.log(space.did())
 ```
 
