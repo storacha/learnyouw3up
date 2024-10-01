@@ -53,6 +53,17 @@ await space.provision(access)
 
 // save the space to the client's local storage
 await space.save()
+
+// optionally, create an account so you can access the space from another
+// device (see below).
+//
+// click the link in the email, but selecting a payment plan is optional, 
+// because the coupon is funding your space! \o/
+const myAccount = await client.login('your@email')
+// create a recovery delegation to your account
+const recovery = await space.createRecovery(myAccount.did())
+// store the recovery delegation with the w3up service provider
+await client.capability.access.delegate({ space: space.did(), delegations: [recovery] })
 ```
 
 Finally, log the DID of the space, for verification:
