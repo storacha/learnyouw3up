@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.1](https://github.com/storacha/learnyouw3up/compare/v1.4.0...v1.4.1) (2024-11-15)
+
+
+### Bug Fixes
+
+* formatting ([#29](https://github.com/storacha/learnyouw3up/issues/29)) ([14b9e17](https://github.com/storacha/learnyouw3up/commit/14b9e170aa372fece0501dc4a2fecacb6e283ec9))
+
 ## [1.4.0](https://github.com/storacha/learnyouw3up/compare/v1.3.7...v1.4.0) (2024-09-30)
 
 
