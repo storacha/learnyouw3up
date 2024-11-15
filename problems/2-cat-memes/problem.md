@@ -17,10 +17,15 @@ On the third web, you hash your content first. This means the hash you generate 
 Download a meme locally (or use the one that you already have!), upload them to web3.storage, and print out their unique CID (Content Identifier). Once you downloaded the last meme your friend sent you, continue with:
 
 **1. Create a New File**
+
 Create a _new_ file, like `ex3.mjs`.
+
 **2. Import w3up and create the client**
+
 Import the w3up library and create the client as before. 
+
 **3. Install the `files-from-path` module**
+
 It helps read files from your local file system and transforms file paths into a format that can be uploaded to web3.storage. Without this module, you’d be stuck doing all the heavy lifting of file reading and formatting - who has time for that in this economy?
 Install `npm install files-from-path` and import:
 
@@ -28,16 +33,21 @@ Install `npm install files-from-path` and import:
 import { filesFromPaths } from 'files-from-path'
 ```
 **4. Upload the meme**
+
 Specify the path to the meme:
+
 ```js
 const files = await filesFromPaths(['path-to-your-meme']) 
 ```
+
 and upload it with using the client's `uploadDirectory` function:
+
 ```js
 const root = await client.uploadDirectory(files)
 ```
 
 Finally, print the CID:
+
 ```js
 console.log(root.toString())
 ```
