@@ -1,6 +1,6 @@
 {
   "name": "learnyouw3up",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "Workshopper for learning how to use w3up - a UCAN based upload service for IPFS and Filecoin.",
   "main": "index.js",
   "type": "module",
