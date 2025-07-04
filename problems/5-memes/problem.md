@@ -4,7 +4,7 @@ Ain't you cool? Now, let's shift gears and dive into the next challenge: retriev
 
 ## The Challenge:
 
-Every meme (or any other file) you upload is instantly available for retrieval. In this exercise, your task is to fetch a text file from a public gateway using its root CID. The cool part? You can use any gateway, thanks to the decentralized nature of peer-to-peer networking. But for simplicity, we’ll use the `w3s.link` gateway.
+Every meme (or any other file) you upload is instantly available for retrieval. In this exercise, your task is to fetch a text file from a public gateway using its root CID. The cool part? You can use any gateway, thanks to the decentralized nature of peer-to-peer networking. But for simplicity, we’ll use the `storacha.link` gateway.
 
 ## What You Need to Do:
 
@@ -23,16 +23,16 @@ const cid = CID.decode(fs.readFileSync(process.stdin.fd))
 
 **3. Construct the Gateway URL**
 
-Format the URL to fetch the content using the `w3s.link` gateway. The URL format is:
+Format the URL to fetch the content using the `storacha.link` gateway. The URL format is:
 
 ```js
-https://w3s.link/ipfs/<CID>
+https://storacha.link/ipfs/<CID>
 ```
 
 Replace <CID> with the actual CID you decoded.
 
 ```js
-const url = `https://w3s.link/ipfs/${cid}`
+const url = `https://storacha.link/ipfs/${cid}`
 ```
 
 **4. Fetch the Content**
@@ -55,7 +55,7 @@ process.stdout.write(await res.text())
 
 **CID Decoding:** The CID you receive is in a compact binary form. You use the multiformats library to decode it into a human-readable string that you can use in the URL.
 
-**Gateway Flexibility:** We use w3s.link here, but you can use any IPFS gateway.
+**Gateway Flexibility:** We use storacha.link here, but you can use any IPFS gateway.
 
 **Real-time Retrieval:** Once you have the CID, fetching content from a decentralized network is as simple as sending a request to a URL.
 

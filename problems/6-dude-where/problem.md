@@ -21,13 +21,13 @@ npm install ipfs-unixfs-exporter
 
 **3. Fetch the CAR File**
 
-You’ll be fetching a CAR file from the web3.storage trustless gateway. The CID for the directory containing the file you want is `bafybeifdnnn35jnwel2dno7hu7zfew6gtxhkaynaszuj4i77j4m7wsv72a`, and the specific file to extract is `/cat2.txt`.
+You’ll be fetching a CAR file from the Storacha trustless gateway. The CID for the directory containing the file you want is `bafybeifdnnn35jnwel2dno7hu7zfew6gtxhkaynaszuj4i77j4m7wsv72a`, and the specific file to extract is `/cat2.txt`.
 
 ```js
 const cid = 'bafybeifdnnn35jnwel2dno7hu7zfew6gtxhkaynaszuj4i77j4m7wsv72a'
 const path = '/cat2.txt'
 
-const res = await fetch(`https://dag.w3s.link/ipfs/${cid}?format=car`)
+const res = await fetch(`https://dag.storacha.link/ipfs/${cid}?format=car`)
 const bytes = new Uint8Array(await res.arrayBuffer())
 ```
 

@@ -12,8 +12,9 @@ import * as CommPProblem from './problems/7-commp/index.js'
 
 const shop = adventure({
   name: 'learnyouw3up',
-  title: '⁂ LEARN YOU THE W3UP FOR MUCH WIN!',
-  bg: 'magenta'
+  title: '🐔 LEARN YOU THE W3UP FOR MUCH WIN!',
+  bg: 196,
+  fg: 255
 })
 
 shop.add('Introduction: UCAN do it!', () => IntroductionProblem)

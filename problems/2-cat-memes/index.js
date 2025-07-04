@@ -4,7 +4,7 @@ import path from 'node:path'
 import { execaNode } from 'execa'
 import msee from 'msee'
 import * as Link from 'multiformats/link'
-import * as Client from '@web3-storage/w3up-client'
+import * as Client from '@storacha/client'
 
 export const problem = msee.parse(fs.readFileSync(new URL('./problem.md', import.meta.url), 'utf8'))
 

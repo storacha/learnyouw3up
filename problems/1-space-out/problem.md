@@ -10,7 +10,7 @@ In this exercise your challenge is to setup a space where you can upload data to
 
 Yes - each space has a DID as well!
 
-Anyway, lets get started. Create a _new_ file for your solution e.g. `ex2.mjs`. Import the w3up library and create the client as before. Now, you need to create a space - a place you can upload data to...but wait, there's a catch. To make your space usable, you need to "provision" it. There's two options here. You can provision it with your account OR you can redeem a coupon. If you don't have a coupon or are unsure what to do, choose option 1.
+Anyway, lets get started. Create a _new_ file for your solution e.g. `ex2.mjs`. Import the Storacha client library and create the client as before. Now, you need to create a space - a place you can upload data to...but wait, there's a catch. To make your space usable, you need to "provision" it. There's two options here. You can provision it with your account OR you can redeem a coupon. If you don't have a coupon or are unsure what to do, choose option 1.
 
 **1. Create a space and provision it using your own account.**
 

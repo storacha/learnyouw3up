@@ -4,8 +4,8 @@ import path from 'node:path'
 import { execaNode } from 'execa'
 import msee from 'msee'
 import { Delegation } from '@ucanto/core'
-import { StoreConf } from '@web3-storage/access/stores/store-conf'
-import * as Client from '@web3-storage/w3up-client'
+import { StoreConf } from '@storacha/client/stores/conf'
+import * as Client from '@storacha/client'
 
 const oneHour = 1000 * 60 * 60
 

@@ -45,7 +45,7 @@ const principal = DID.parse(data)
 Use the client to create a delegation for `upload/list` to the provided DID:
 
 ```js
-import * as Client from '@web3-storage/w3up-client'
+import * as Client from '@storacha/client'
 ```
 
 Create the client and set the expiration time for the delegation:
