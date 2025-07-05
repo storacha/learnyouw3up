@@ -13,7 +13,7 @@ import * as CommPProblem from './problems/7-commp/index.js'
 const shop = adventure({
   name: 'learnyouw3up',
   title: '🐔 LEARN YOU THE W3UP FOR MUCH WIN!',
-  bg: 196,
+  bg: 160,
   fg: 255
 })
 

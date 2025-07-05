@@ -2,7 +2,7 @@
 
 Learn you the w3up for much win! Workshopper for learning how to use w3up - Storacha's UCAN based upload service for IPFS and Filecoin.
 
-![preview](https://storacha.link/ipfs/bafybeidtsaf4erkqppzhyntplbmbwhzjsph3mw4zmkmof5ymv4lxf73ttm/learnyouw3up.png)
+![preview](https://storacha.link/ipfs/bafybeihf6ynoqpmt5cdygkskrelnzfqvo4gs46iwxaxvn5lpuol5jgphsi/learnyouw3up.png)
 
 ## Install
 
