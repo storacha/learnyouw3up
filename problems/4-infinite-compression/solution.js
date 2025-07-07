@@ -1,4 +1,4 @@
-import * as Client from '@web3-storage/w3up-client'
+import * as Client from '@storacha/client'
 import { filesFromPaths } from 'files-from-path'
 
 const client = await Client.create()

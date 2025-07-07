@@ -6,7 +6,7 @@ So, lets talk Filecoin...
 
 ## The Challenge
 
-Filecoin is a decentralized storage network built on IPFS protocols. When you upload data using w3up, it generates a DAG and its corresponding root CID. This DAG is packed into CAR files (shards), and each shard gets a Piece CID. This Piece CID is crucial because it’s how your data is addressed in deals with Filecoin Storage Providers (SPs).
+Filecoin is a decentralized storage network built on IPFS protocols. When you upload data using the Storacha client, it generates a DAG and its corresponding root CID. This DAG is packed into CAR files (shards), and each shard gets a Piece CID. This Piece CID is crucial because it’s how your data is addressed in deals with Filecoin Storage Providers (SPs).
 
 The fun part? These deals are like massive shipping containers that need to be filled up. Your data goes through an aggregation pipeline, which ultimately leads to it being stored in a deal with a Filecoin SP. The process includes inclusion proofs and data aggregation proofs—basically, all the cryptographic magic that proves your data is securely stored and retrievable.
 
@@ -16,7 +16,7 @@ The fun part? These deals are like massive shipping containers that need to be f
 
 **2. Install the Necessary Libraries**
 
-You’ll need the @web3-storage/data-segment for parsing the Piece CID and @ipld/dag-json for encoding the output.
+You’ll need the `@web3-storage/data-segment` library for parsing the Piece CID and `@ipld/dag-json` for encoding the output.
 
 ```
 npm install @web3-storage/data-segment
@@ -28,7 +28,7 @@ npm install @ipld/dag-json
 Use the `client.capability.filecoin.info()` method to query the deal information for a specific Piece CID. You’ll be working with the Piece CID `bafkzcibcaycsfehfpywo35zgvilhaqegcsrslebar6vcnwvzi64fljvwdrhvqei`.
 
 ```js
-import * as Client from '@web3-storage/w3up-client'
+import * as Client from '@storacha/client'
 import { Piece } from '@web3-storage/data-segment'
 
 const client = await Client.create()

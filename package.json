@@ -1,7 +1,7 @@
 {
   "name": "learnyouw3up",
   "version": "1.4.1",
-  "description": "Workshopper for learning how to use w3up - a UCAN based upload service for IPFS and Filecoin.",
+  "description": "Workshopper for learning how to use w3up - Storacha's UCAN based upload protocol for IPFS and Filecoin.",
   "main": "index.js",
   "type": "module",
   "bin": {
@@ -13,6 +13,7 @@
     "test": "echo \"Error: no test specified\""
   },
   "keywords": [
+    "storacha",
     "w3up",
     "web3.storage",
     "web3",
@@ -26,29 +27,28 @@
   "author": "Alan Shaw",
   "license": "Apache-2.0 OR MIT",
   "dependencies": {
-    "@ipld/dag-json": "^10.1.5",
-    "@ucanto/core": "^10.0.1",
-    "@ucanto/validator": "^9.0.1",
-    "@web3-storage/access": "^20.0.1",
+    "@ipld/dag-json": "^10.2.5",
+    "@storacha/client": "^1.4.0",
+    "@ucanto/core": "^10.4.0",
+    "@ucanto/validator": "^10.0.0",
     "@web3-storage/data-segment": "^5.0.0",
-    "@web3-storage/w3up-client": "^16.2.0",
     "adventure": "^2.11.1",
     "execa": "^8.0.1",
     "msee": "^0.3.5",
-    "multiformats": "^13.3.0"
+    "multiformats": "^13.3.7"
   },
   "devDependencies": {
-    "@ipld/car": "^5.2.4",
-    "files-from-path": "^1.0.1",
-    "ipfs-unixfs-exporter": "^13.2.2",
-    "standard": "^17.1.0"
+    "@ipld/car": "^5.4.2",
+    "files-from-path": "^1.1.4",
+    "ipfs-unixfs-exporter": "^13.6.6",
+    "standard": "^17.1.2"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/web3-storage/learnyouw3up.git"
+    "url": "git+https://github.com/storacha/learnyouw3up.git"
   },
   "bugs": {
-    "url": "https://github.com/web3-storage/learnyouw3up/issues"
+    "url": "https://github.com/storacha/learnyouw3up/issues"
   },
-  "homepage": "https://github.com/web3-storage/learnyouw3up#readme"
+  "homepage": "https://github.com/storacha/learnyouw3up#readme"
 }

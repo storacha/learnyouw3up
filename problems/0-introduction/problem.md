@@ -2,7 +2,7 @@
 
 Welcome! We learn you the w3up now.
 
-This workshopper is a set of interactive challenges to help you learn about w3up.
+This workshopper is a set of interactive challenges to help you learn about w3up - the protocol used by the Storacha Network.
 
 Let's get you setup. Make a new directory, and install the client library like so:
 
@@ -10,7 +10,7 @@ Let's get you setup. Make a new directory, and install the client library like s
 mkdir $ADVENTURE_NAME
 cd $ADVENTURE_NAME
 npm init -y
-npm install @web3-storage/w3up-client
+npm install @storacha/client
 ```
 
 Nice one. Now, this is how things are going to work. You make a JS file for each exercise in the directory you installed the library e.g. `ex1.mjs`. You write the code that solves the problem, and then the workshopper will verify your solution when you type: `$ADVENTURE_NAME verify ex1.mjs`.
@@ -24,7 +24,7 @@ Ok, now I need you to make that JS file we talked about, and call it `ex1.mjs`. 
 Put these JavaScripts into your file:
 
 ```js
-import * as Client from '@web3-storage/w3up-client'
+import * as Client from '@storacha/client'
 const client = await Client.create()
 console.log(client.did())
 ```

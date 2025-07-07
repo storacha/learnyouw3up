@@ -4,7 +4,7 @@ YAS BOSS! That's how you do it!
 
 ## What’s the Deal with Content Addressing?
 
-So, here’s the scoop: when you upload data to web3.storage, it gets transformed into a **Directed Acyclic Graph (DAG)**. Each piece of your data becomes a node, and each node gets a unique identifier called a **Content Identifier (CID)**. This whole DAG is then packed into a Content-Addressed Archive (CAR)—think of it like a digital suitcase for your data, ready to travel the web.
+So, here’s the scoop: when you upload data to Storacha, it gets transformed into a **Directed Acyclic Graph (DAG)**. Each piece of your data becomes a node, and each node gets a unique identifier called a **Content Identifier (CID)**. This whole DAG is then packed into a Content-Addressed Archive (CAR)—think of it like a digital suitcase for your data, ready to travel the web.
 
 ## How It Works:
 

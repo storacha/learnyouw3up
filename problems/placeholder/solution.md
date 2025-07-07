@@ -1,7 +1,7 @@
 Here's the official solution in case you want to compare notes:
 
 ```js
-import * as Client from '@web3-storage/w3up-client'
+import * as Client from '@storacha/client'
 
 const client = await Client.create()
 ```
