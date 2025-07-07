@@ -1,6 +1,6 @@
 {
   "name": "learnyouw3up",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "Workshopper for learning how to use w3up - Storacha's UCAN based upload protocol for IPFS and Filecoin.",
   "main": "index.js",
   "type": "module",
