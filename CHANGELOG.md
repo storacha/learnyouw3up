@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.2](https://github.com/storacha/learnyouw3up/compare/v1.4.1...v1.4.2) (2025-07-07)
+
+
+### Bug Fixes
+
+* theme ([#31](https://github.com/storacha/learnyouw3up/issues/31)) ([94489a1](https://github.com/storacha/learnyouw3up/commit/94489a15fd07f5daa72489a69400324a55a0e95a))
+
 ## [1.4.1](https://github.com/storacha/learnyouw3up/compare/v1.4.0...v1.4.1) (2024-11-15)
 
 
